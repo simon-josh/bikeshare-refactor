@@ -10,13 +10,13 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 # create the function to display the city matching the city with the character which the user typed
 def get_city():
-
+# create a while loop to ask user selecting a city
     while True:
             city = input('Would you like to select data for Chicago(type \'c\'), New York (type \'n\'), or Washington(type \'w\')? ').lower().strip()
 
-            city_list = ['c', 'n', 'w']
+            cityList = ['c', 'n', 'w']
 
-            if city not in city_list:
+            if city not in cityList:
                 print('Invalid input, please try it again.')
             else:
                 break
@@ -122,16 +122,7 @@ def get_filters():
 
 # create this function to loads data for the specified city and filters by month and day if applicable.
 def load_data(city, month, day):
-    """
-    Loads data for the specified city and filters by month and day if applicable.
 
-    Args:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    Returns:
-        df - Pandas DataFrame containing city data filtered by month and day
-    """
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
 
