@@ -10,7 +10,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 # create the function to display the city matching the city with the character which the user typed
 def get_city():
-
+# create a while loop to ask user selecting a city
     while True:
             city = input('Would you like to select data for Chicago(type \'c\'), New York (type \'n\'), or Washington(type \'w\')? ').lower().strip()
 
