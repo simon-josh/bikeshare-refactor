@@ -14,7 +14,9 @@ I forked the current Udacity repository to get my own copy of a template for thi
 I will create and work on the two branched. Finally, I will merge both branches to the master branch, and push it back up to the remote repository in my Githut account.
 
 (2). Delete unnecessary comment form the line 125 to 134.
-(3). Chane string variable 'city_list' twice at line 17 and 19.
+(3). Change string variable 'city_list' twice at line 17 and 19.
+
+(4). Add comment "create a while loop to ask users selecting a city" at line 13.
 
 ### Files used
 #Include the files used
